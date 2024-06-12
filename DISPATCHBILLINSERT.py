@@ -79,7 +79,7 @@ def dispatchbillsavescreen():
 
             # Credentials
             username = 'nikkie081297@gmail.com'  
-            password = 'nbiqexxsciicwuig'
+            password = ''
 
             # Sending the email
             ## note - this smtp config worked for me, I found it googling around, you may have to tweak the # (587) to get yours to work
