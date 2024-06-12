@@ -54,17 +54,17 @@ def customerssavescreen():
                 db.commit()
                 db.close()
                             
-                from_address = "nikkie081297@gmail.com"
+                from_address = ""
                 to_address = ee.get()
     
                 # Create message container - the correct MIME type is multipart/alternative.
                 msg = MIMEMultipart('alternative')
-                msg['Subject'] = "WELCOME TO NIKITA'S STORE"
+                msg['Subject'] = ""
                 msg['From'] = from_address
                 msg['To'] = to_address
     
                 # Create the message (HTML).
-                html ="Hi "+str(bb.get())+",<br><br>Thanks for becoming a part of Nikita's Store<br>We look forward to serve you better and better everyday<br><br>Happy Shoping,<br>Team Nikita's Store"
+                html ="Hi "+str(bb.get())+",<br><br>Thanks for becoming a part of  Store<br>We look forward to serve you better and better everyday<br><br>Happy Shoping,<br>Team Store"
     
                 # Record the MIME type - text/html.
                 part1 = MIMEText(html, 'html')
@@ -73,8 +73,8 @@ def customerssavescreen():
                 msg.attach(part1)
     
                 # Credentials
-                username = 'nikkie081297@gmail.com'  
-                password = 'nbiqexxsciicwuig'
+                username = ''  
+                password = ''
     
                 # Sending the email
                 ## note - this smtp config worked for me, I found it googling around, you may have to tweak the # (587) to get yours to work
