@@ -59,7 +59,7 @@ def dispatchbillsavescreen():
             db.commit()
             db.close()
             
-            from_address = "nikkie081297@gmail.com"
+            from_address = ""
             to_address = bb4.cget("text")
 
             # Create message container - the correct MIME type is multipart/alternative.
@@ -78,7 +78,7 @@ def dispatchbillsavescreen():
             msg.attach(part1)
 
             # Credentials
-            username = 'nikkie081297@gmail.com'  
+            username = ''  
             password = ''
 
             # Sending the email
